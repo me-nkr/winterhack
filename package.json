@@ -1,0 +1,31 @@
+{
+  "name": "winterhack",
+  "version": "1.0.0",
+  "description": "Eat Better",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "dev": "NODE_ENV=dev nodemon -r dotenv/config ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me-nkr/winterhack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/me-nkr/winterhack/issues"
+  },
+  "homepage": "https://github.com/me-nkr/winterhack#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
