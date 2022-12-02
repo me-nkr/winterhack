@@ -10,6 +10,9 @@ const app = express();
 
 app.use(express.json());
 
+// Welcome
+app.get('/', (req, res) => res.send('Welcome to EatBetter'))
+
 // Identity
 app.use('/user', userRoutes);
 app.use('/org', orgRoutes);
@@ -21,4 +24,4 @@ app.use('/org', orgRoutes);
 
 app.use(errorHandler);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
